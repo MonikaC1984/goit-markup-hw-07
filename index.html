@@ -24,29 +24,37 @@
         <div class="container">
           <p class="logo">
             <a href="./index.html" style="text-decoration: none">
-              <span class="logo1">Web</span><span class="logo2">Studio</span>
+              <span class="logo__first">Web</span
+              ><span class="logo__second">Studio</span>
             </a>
           </p>
 
           <nav>
             <!-- Nawigacja do innych stron -->
 
-            <ul class="content-menu">
+            <ul class="nav">
               <li>
-                <a href="./index.html" class="nav nav-outline ck1">Agencja</a>
+                <a
+                  href="./index.html"
+                  class="nav__item nav__item--outline nav__item--active"
+                  >Agencja</a
+                >
               </li>
               <li>
-                <a href="./portfolio.html" class="nav">Portfolio</a>
+                <a href="./portfolio.html" class="nav__item">Portfolio</a>
               </li>
               <li>
-                <a href="/Kontakt" class="nav">Kontakt</a>
+                <a href="/Kontakt" class="nav__item">Kontakt</a>
               </li>
             </ul>
           </nav>
 
-          <ul class="content-kontakt">
+          <ul class="contact">
             <li>
-              <a class="nav ck2" href="mailto:info@devstudio.com">
+              <a
+                class="contact__item contact__item--unactive"
+                href="mailto:info@devstudio.com"
+              >
                 <svg width="16px" height="12px">
                   <use xlink:href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -54,7 +62,10 @@
               </a>
             </li>
             <li>
-              <a class="nav ck2" href="tel:+48111111111">
+              <a
+                class="contact__item contact__item--unactive"
+                href="tel:+48111111111"
+              >
                 <svg width="10px" height="16px">
                   <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -69,7 +80,9 @@
     <main>
       <section class="background-image">
         <div class="container container-h1-button1">
-          <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <h1 class="container-h1-button1--h1">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
           <button type="button" class="button1" data-modal-open>
             Zamów usługę
           </button>
@@ -456,8 +469,8 @@
         <div class="kontakt-footer">
           <p class="logo">
             <a href="" style="text-decoration: none"
-              ><span class="logo1">Web</span
-              ><span class="logo2 cf1">Studio</span></a
+              ><span class="logo__first">Web</span
+              ><span class="logo__second cf1">Studio</span></a
             >
           </p>
           <address>

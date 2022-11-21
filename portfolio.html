@@ -24,39 +24,48 @@
         <div class="container">
           <p class="logo">
             <a href="./index.html" style="text-decoration: none">
-              <span class="logo1">Web</span><span class="logo2">Studio</span>
+              <span class="logo__first">Web</span
+              ><span class="logo__second">Studio</span>
             </a>
           </p>
 
           <nav>
             <!-- Nawigacja do innych stron -->
 
-            <ul class="content-menu">
+            <ul class="nav">
               <li>
-                <a href="./index.html" class="nav">Agencja</a>
+                <a href="./index.html" class="nav__item">Agencja</a>
               </li>
               <li>
-                <a href="./portfolio.html" class="nav nav-outline ck1"
+                <a
+                  href="./portfolio.html"
+                  class="nav__item nav__item--outline nav__item--active"
                   >Portfolio</a
                 >
               </li>
               <li>
-                <a href="/Kontakt" class="nav">Kontakt</a>
+                <a href="/Kontakt" class="nav__item">Kontakt</a>
               </li>
             </ul>
           </nav>
 
-          <ul class="content-kontakt">
+          <ul class="contact">
             <li>
-              <a class="nav ck2" href="mailto:info@devstudio.com">
-                <svg class="nav" width="16px" height="12px">
+              <a
+                class="contact__item contact__item--unactive"
+                href="mailto:info@devstudio.com"
+              >
+                <svg width="16px" height="12px">
                   <use xlink:href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a class="nav ck2" href="tel:+48111111111">
+              <a
+                class="contact__item contact__item--unactive"
+                href="tel:+48111111111"
+              >
                 <svg width="10px" height="16px">
                   <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -301,8 +310,8 @@
         <div class="kontakt-footer">
           <p class="logo">
             <a href="" style="text-decoration: none"
-              ><span class="logo1">Web</span
-              ><span class="logo2 cf1">Studio</span></a
+              ><span class="logo__first">Web</span
+              ><span class="logo__second cf1">Studio</span></a
             >
           </p>
           <address>
@@ -353,20 +362,22 @@
           <p class="join">Zapisz się do newslettera</p>
           <div>
             <form>
-              <label class="newsletter-box">
-                <input
-                  class="newsbox-email"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
+              <div class="newsletter-box">
+                <label>
+                  <input
+                    class="newsbox-email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
                 <button class="news-button" type="submit">
-                  <p class="text">Zapisz&nbspsię</p>
-                  <svg widht="24" height="24">
+                  <span class="text">Zapisz się</span>
+                  <svg class="news-svg" width="24" height="24">
                     <use xlink:href="./images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
-              </label>
+              </div>
             </form>
           </div>
         </div>
