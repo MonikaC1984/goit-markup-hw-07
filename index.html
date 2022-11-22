@@ -91,19 +91,21 @@
           <!-- Okno modalne -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-button" data-modal-close>
+              <button class="modal__exit" data-modal-close>
                 <svg width="11px" height="11px">
                   <use xlink:href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </button>
               <div>
-                <p class="text-modal">Zostaw swoje dane w formularzu poniżej</p>
+                <p class="modal__title">
+                  Zostaw swoje dane w formularzu poniżej
+                </p>
               </div>
               <form class="form">
                 <fieldset class="fieldset">
-                  <label class="text-label-modal" for="user_name">Imię</label>
+                  <label class="fieldset__label" for="user_name">Imię</label>
                   <input
-                    class="label-modal"
+                    class="fieldset__input"
                     type="text"
                     name="imię"
                     id="user_name"
@@ -117,9 +119,9 @@
                 </fieldset>
 
                 <fieldset class="fieldset">
-                  <label class="text-label-modal" for="user_tel">Telefon</label>
+                  <label class="fieldset__label" for="user_tel">Telefon</label>
                   <input
-                    class="label-modal"
+                    class="fieldset__input"
                     type="tel"
                     name="tel"
                     id="user_tel"
@@ -133,9 +135,9 @@
                 </fieldset>
 
                 <fieldset class="fieldset">
-                  <label class="text-label-modal" for="user_email">Email</label>
+                  <label class="fieldset__label" for="user_email">Email</label>
                   <input
-                    class="label-modal"
+                    class="fieldset__input"
                     type="email"
                     name="email"
                     id="user_email"
@@ -148,40 +150,44 @@
                   </svg>
                 </fieldset>
 
-                <fieldset class="comment">
-                  <label class="text-label-modal" for="textarea"
-                    >Komentarz</label
-                  >
-                  <input
-                    class="label-modal-textarea"
-                    type="text"
+                <label class="textarea">
+                  <span class="textarea__label">Komentarz</span>
+                  <textarea
+                    class="textarea__input"
+                    type="textarea"
                     name="text"
-                    id="textarea"
                     placeholder="Wprowadź tekst"
-                  />
-                </fieldset>
+                  ></textarea>
+                </label>
 
-                <label class="statement">
+                <label class="custom-checkbox">
                   <input
-                    class="checkbox"
+                    class="custom-checkbox__input"
                     type="checkbox"
                     name="oswiadczenie"
                     value=""
                   />
-                  <span class="check-border">
-                    <svg class="check-svg" width="11px" height="8px">
+                  <span class="custom-checkbox__icon-border">
+                    <svg
+                      class="custom-checkbox__icon"
+                      width="11px"
+                      height="8px"
+                    >
                       <use xlink:href="./images/icons.svg#icon-Vector-1"></use>
                     </svg>
                   </span>
 
-                  <span class="state-text">
+                  <span class="custom-checkbox__text">
                     Oświadczam iż akceptuję
-                    <a href="">Regulamin</a> i
-                    <a href="">Politykę prywatności</a>.
+                    <a class="custom-checkbox__text--link" href="">Regulamin</a>
+                    i
+                    <a class="custom-checkbox__text--link" href=""
+                      >Politykę prywatności</a
+                    >.
                   </span>
                 </label>
 
-                <button type="submit">Wyślij</button>
+                <button class="modal__button" type="submit">Wyślij</button>
               </form>
             </div>
           </div>

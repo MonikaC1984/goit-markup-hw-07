@@ -704,7 +704,7 @@ body {
   flex-direction: column;
 }
 
-.modal-button {
+.modal__exit {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -719,7 +719,7 @@ body {
   background: var(--color-header);
 }
 
-.text-modal {
+.modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -739,36 +739,15 @@ body {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.text-label-modal {
-  position: absolute;
-  top: -18px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--color-par);
-}
-.label-modal {
-  width: 100%;
-  padding: 13px 13px 13px 40px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--color-par);
+  outline: brown solid;
 }
 
-.label-modal-textarea {
-  width: 100%;
-  padding: 13px 13px 13px 16px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--color-par);
-}
 .fieldset-svg {
   position: absolute;
   top: 1px;
   left: 1px;
+  margin: 11px 12px;
+  outline: yellow solid;
 }
 
 .form .fieldset:focus-within {
@@ -782,56 +761,85 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--color-par);
+  outline: black solid;
 }
-.form svg {
-  margin: 11px 12px;
+
+.fieldset__label {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-par);
+  outline: green solid;
 }
-.form input {
+
+.fieldset__input {
   outline: 0;
   border: 0;
   background-color: transparent;
-}
-
-.comment {
-  position: relative;
-  width: 448px;
-  height: 120px;
-  margin-top: 28px;
-  margin-bottom: 20px;
-
+  width: 100%;
+  padding: 13px 13px 13px 40px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--color-par);
+  outline: blue solid;
+}
+
+.textarea {
+  display: block;
+  margin-top: 10px;
+  outline: blue solid;
+}
+.textarea__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  outline: red solid;
+}
+.textarea__input {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+  padding: 12px 16px;
+  color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: red solid;
 }
 
-.comment:focus-within {
-  border: 1px solid var(--logo1-color);
+.textarea__input::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.textarea__input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
-.statement {
+.custom-checkbox {
   position: relative;
   display: inline-flex;
+  outline: red solid;
 }
 
-.state-text {
-  margin-left: 37px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-par);
+.custom-checkbox__input {
+  position: absolute;
+  left: 14px;
+  opacity: 0;
+  outline: red solid;
 }
-
-.state-text a {
-  color: var(--logo1-color);
-}
-
-.check-border {
+.custom-checkbox__icon-border {
   position: absolute;
   left: 14px;
   top: 4px;
@@ -842,25 +850,31 @@ body {
   border-radius: 4px;
 }
 
-.checkbox {
+.custom-checkbox__icon {
   position: absolute;
-  left: 14px;
-  opacity: 0;
-}
-
-.check-svg {
-  position: absolute;
-  top: -9px;
-  left: -11px;
+  top: 1px;
+  left: 1px;
   fill: var(--color-header);
+  outline: red solid;
 }
 
-.checkbox:checked + .check-border {
+.custom-checkbox__input:checked + .custom-checkbox__icon-border {
   border: 1px solid var(--logo1-color);
   background-color: var(--logo1-color);
 }
+.custom-checkbox__text {
+  margin-left: 37px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-par);
+}
 
-.form button {
+.custom-checkbox__text--link {
+  color: var(--logo1-color);
+  outline: red solid;
+}
+.modal__button {
   display: block;
   margin-top: 30px;
   margin-left: 120px;
