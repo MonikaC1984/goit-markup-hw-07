@@ -73,7 +73,10 @@ body {
   text-decoration: none;
 }
 
-.logo__first {
+.logo--link {
+  text-decoration: none;
+}
+.logo--blue {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -83,7 +86,7 @@ body {
   color: var(--logo1-color);
   text-decoration: none;
 }
-.logo__second {
+.logo--black {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
@@ -111,7 +114,7 @@ body {
   align-items: center;
 }
 
-.nav__item {
+.nav__link {
   color: var(--color-h2);
   font-weight: 500;
   font-size: 14px;
@@ -122,20 +125,19 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__item--active {
+.nav__link--color {
   color: var(--logo1-color);
-}
-.nav__item--unactive {
-  color: var(--color-par);
-}
-
-.nav__item--outline {
   position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.nav__item--outline:after {
+.nav__link--color:after {
   content: "";
   position: absolute;
-  bottom: -32px;
+  bottom: -33px;
   left: 0px;
   width: 100%;
   height: 4px;
@@ -143,8 +145,8 @@ body {
   border-radius: 2px;
 }
 
-.nav__item:hover,
-.nav__item:focus {
+.nav__link:hover,
+.nav__link:focus {
   background-color: var(--color-header);
   color: var(--logo1-color);
   border-color: var(--logo1-color);
@@ -163,7 +165,7 @@ body {
 }
 
 .contact__item {
-  color: var(--color-h2);
+  color: var(--color-par);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -173,11 +175,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__item--unactive {
-  color: var(--color-par);
-}
-
-.contact svg {
+.contact__icon {
   fill: var(--color-par);
   margin-right: 10px;
   transition-duration: 250ms;
@@ -206,14 +204,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.background-intro {
-  background-color: var(--background-color);
-}
-.container-h1-button1 {
+
+.container--h1 {
   display: block;
   padding: 200px 0;
 }
-.container-h1-button1--h1 {
+
+.container__heading {
   text-align: center;
   margin: 0 auto 30px;
   width: 696px;
@@ -225,7 +222,7 @@ body {
   color: var(--color-header);
 }
 
-.button1 {
+.container__button {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -300,7 +297,7 @@ body {
 
 /*container* -- utils*/
 
-.container-img {
+.container--img {
   display: block;
   justify-content: center;
   align-items: center;
@@ -344,7 +341,7 @@ body {
 
 /*secja Nasz Zespół team*/
 
-.section--team-background {
+.section--team {
   background-color: var(--filter-color);
 }
 .team {
@@ -428,11 +425,15 @@ body {
 
 /*footer -utils*/
 
-.container-footer {
+.container--footer {
   display: flex;
 }
 
 /*footer -kontakt*/
+
+.background-intro {
+  background-color: var(--background-color);
+}
 .kontakt-footer {
   display: block;
 }

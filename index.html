@@ -20,53 +20,44 @@
   </head>
   <body>
     <header>
+      <!-- LOGO -->
       <section class="container-header">
         <div class="container">
           <p class="logo">
-            <a href="./index.html" style="text-decoration: none">
-              <span class="logo__first">Web</span
-              ><span class="logo__second">Studio</span>
+            <a class="logo--link" href="./index.html">
+              <span class="logo--blue">Web</span
+              ><span class="logo--black">Studio</span>
             </a>
           </p>
-
+          <!-- Nawigacja do innych stron -->
           <nav>
-            <!-- Nawigacja do innych stron -->
-
             <ul class="nav">
               <li>
-                <a
-                  href="./index.html"
-                  class="nav__item nav__item--outline nav__item--active"
+                <a href="./index.html" class="nav__link nav__link--color"
                   >Agencja</a
                 >
               </li>
               <li>
-                <a href="./portfolio.html" class="nav__item">Portfolio</a>
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
               </li>
               <li>
-                <a href="/Kontakt" class="nav__item">Kontakt</a>
+                <a class="nav__link" href="/Kontakt">Kontakt</a>
               </li>
             </ul>
           </nav>
-
+          <!-- kontakt -->
           <ul class="contact">
             <li>
-              <a
-                class="contact__item contact__item--unactive"
-                href="mailto:info@devstudio.com"
-              >
-                <svg width="16px" height="12px">
+              <a class="contact__item" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16px" height="12px">
                   <use xlink:href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a
-                class="contact__item contact__item--unactive"
-                href="tel:+48111111111"
-              >
-                <svg width="10px" height="16px">
+              <a class="contact__item" href="tel:+48111111111">
+                <svg class="contact__icon" width="10px" height="16px">
                   <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111
@@ -80,117 +71,13 @@
     <main>
       <!-- Intro -->
       <section class="background-image">
-        <div class="container container-h1-button1">
-          <h1 class="container-h1-button1--h1">
+        <div class="container container--h1">
+          <h1 class="container__heading">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="button1" data-modal-open>
+          <button type="button" class="container__button" data-modal-open>
             Zamów usługę
           </button>
-
-          <!-- Okno modalne -->
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal__exit" data-modal-close>
-                <svg width="11px" height="11px">
-                  <use xlink:href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </button>
-              <div>
-                <p class="modal__title">
-                  Zostaw swoje dane w formularzu poniżej
-                </p>
-              </div>
-              <form class="form">
-                <fieldset class="fieldset">
-                  <label class="fieldset__label" for="user_name">Imię</label>
-                  <input
-                    class="fieldset__input"
-                    type="text"
-                    name="imię"
-                    id="user_name"
-                    placeholder=""
-                  />
-                  <svg class="fieldset-svg" width="18px" height="18px">
-                    <use
-                      xlink:href="./images/icons.svg#icon-person-black-18dp-1"
-                    ></use>
-                  </svg>
-                </fieldset>
-
-                <fieldset class="fieldset">
-                  <label class="fieldset__label" for="user_tel">Telefon</label>
-                  <input
-                    class="fieldset__input"
-                    type="tel"
-                    name="tel"
-                    id="user_tel"
-                    placeholder=""
-                  />
-                  <svg class="fieldset-svg" width="18px" height="18px">
-                    <use
-                      xlink:href="./images/icons.svg#icon-phone-black-18dp-1"
-                    ></use>
-                  </svg>
-                </fieldset>
-
-                <fieldset class="fieldset">
-                  <label class="fieldset__label" for="user_email">Email</label>
-                  <input
-                    class="fieldset__input"
-                    type="email"
-                    name="email"
-                    id="user_email"
-                    placeholder=""
-                  />
-                  <svg class="fieldset-svg" width="18px" height="18px">
-                    <use
-                      xlink:href="./images/icons.svg#icon-email-black-18dp-1"
-                    ></use>
-                  </svg>
-                </fieldset>
-
-                <label class="textarea">
-                  <span class="textarea__label">Komentarz</span>
-                  <textarea
-                    class="textarea__input"
-                    type="textarea"
-                    name="text"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                </label>
-
-                <label class="custom-checkbox">
-                  <input
-                    class="custom-checkbox__input"
-                    type="checkbox"
-                    name="oswiadczenie"
-                    value=""
-                  />
-                  <span class="custom-checkbox__icon-border">
-                    <svg
-                      class="custom-checkbox__icon"
-                      width="11px"
-                      height="8px"
-                    >
-                      <use xlink:href="./images/icons.svg#icon-Vector-1"></use>
-                    </svg>
-                  </span>
-
-                  <span class="custom-checkbox__text">
-                    Oświadczam iż akceptuję
-                    <a class="custom-checkbox__text--link" href="">Regulamin</a>
-                    i
-                    <a class="custom-checkbox__text--link" href=""
-                      >Politykę prywatności</a
-                    >.
-                  </span>
-                </label>
-
-                <button class="modal__button" type="submit">Wyślij</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -254,7 +141,7 @@
       </section>
       <!-- Sekcja Czym się zajmujemy -->
       <section class="section">
-        <div class="container container-img">
+        <div class="container container--img">
           <h2 class="section__h2">Czym się zajmujemy</h2>
           <ul class="images-agencja">
             <li class="images-agencja__item">
@@ -291,8 +178,8 @@
         </div>
       </section>
       <!-- Sekcja Nasz Zespół team -->
-      <section class="section section--team-background">
-        <div class="container container-img">
+      <section class="section section--team">
+        <div class="container container--img">
           <h2 class="section__h2">Nasz zespół</h2>
 
           <ul class="team">
@@ -433,7 +320,7 @@
       </section>
       <!-- Sekcja Nasi Klienci clients -->
       <section class="section">
-        <div class="container container-img">
+        <div class="container container--img">
           <h2 class="section__h2">Nasi klienci</h2>
           <ul class="clients">
             <li class="clients__item">
@@ -484,12 +371,12 @@
     </main>
     <!-- footer -->
     <footer class="section background-intro">
-      <div class="container container-footer">
+      <div class="container container--footer">
         <div class="kontakt-footer">
           <p class="logo">
             <a href="" style="text-decoration: none"
-              ><span class="logo__first">Web</span
-              ><span class="logo__second cf1">Studio</span></a
+              ><span class="logo--blue">Web</span
+              ><span class="logo--black cf1">Studio</span></a
             >
           </p>
           <address>
@@ -559,6 +446,104 @@
         </div>
       </div>
     </footer>
+    <!-- Okno modalne -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__exit" data-modal-close>
+          <svg width="11px" height="11px">
+            <use xlink:href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <div>
+          <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+        </div>
+        <form class="form">
+          <fieldset class="fieldset">
+            <label class="fieldset__label" for="user_name">Imię</label>
+            <input
+              class="fieldset__input"
+              type="text"
+              name="imię"
+              id="user_name"
+              placeholder=""
+            />
+            <svg class="fieldset-svg" width="18px" height="18px">
+              <use
+                xlink:href="./images/icons.svg#icon-person-black-18dp-1"
+              ></use>
+            </svg>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <label class="fieldset__label" for="user_tel">Telefon</label>
+            <input
+              class="fieldset__input"
+              type="tel"
+              name="tel"
+              id="user_tel"
+              placeholder=""
+            />
+            <svg class="fieldset-svg" width="18px" height="18px">
+              <use
+                xlink:href="./images/icons.svg#icon-phone-black-18dp-1"
+              ></use>
+            </svg>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <label class="fieldset__label" for="user_email">Email</label>
+            <input
+              class="fieldset__input"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder=""
+            />
+            <svg class="fieldset-svg" width="18px" height="18px">
+              <use
+                xlink:href="./images/icons.svg#icon-email-black-18dp-1"
+              ></use>
+            </svg>
+          </fieldset>
+
+          <label class="textarea">
+            <span class="textarea__label">Komentarz</span>
+            <textarea
+              class="textarea__input"
+              type="textarea"
+              name="text"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+
+          <label class="custom-checkbox">
+            <input
+              class="custom-checkbox__input"
+              type="checkbox"
+              name="oswiadczenie"
+              value=""
+            />
+            <span class="custom-checkbox__icon-border">
+              <svg class="custom-checkbox__icon" width="11px" height="8px">
+                <use xlink:href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </span>
+
+            <span class="custom-checkbox__text">
+              Oświadczam iż akceptuję
+              <a class="custom-checkbox__text--link" href="">Regulamin</a>
+              i
+              <a class="custom-checkbox__text--link" href=""
+                >Politykę prywatności</a
+              >.
+            </span>
+          </label>
+
+          <button class="modal__button" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
