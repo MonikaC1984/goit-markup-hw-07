@@ -450,7 +450,6 @@ body {
   line-height: 24px;
   padding-top: 15px;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .footer-data__address {
@@ -459,6 +458,7 @@ body {
 
 .footer-data__link {
   list-style: none;
+  text-decoration: none;
   margin-bottom: 9px;
   color: #ffffff99;
   transition-duration: 250ms;
