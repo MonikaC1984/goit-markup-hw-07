@@ -30,8 +30,8 @@
             </a>
           </p>
           <!-- Nawigacja do innych stron -->
-          <nav>
-            <ul class="nav">
+          <nav class="nav">
+            <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link nav__link--color" href="./index.html"
                   >Agencja</a
@@ -84,13 +84,13 @@
       <!-- Sekcja Why us? Lorem Ipsum -->
       <section class="section">
         <div class="container container--describe">
-          <h2 class="section__h2 section__h2--hide">
+          <h2 class="container__h2 container__h2--hide">
             Dlaczego warto nas wybrać?
           </h2>
           <ul class="card-set">
             <li class="card-set__item">
               <div class="card-set__image">
-                <svg width="70" height="70">
+                <svg class="card-set__icon" width="70" height="70">
                   <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
@@ -102,7 +102,7 @@
             </li>
             <li class="card-set__item">
               <div class="card-set__image">
-                <svg width="70" height="70">
+                <svg class="card-set__icon" width="70" height="70">
                   <use xlink:href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
@@ -114,7 +114,7 @@
             </li>
             <li class="card-set__item">
               <div class="card-set__image">
-                <svg width="70" height="70">
+                <svg class="card-set__icon" width="70" height="70">
                   <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
@@ -126,7 +126,7 @@
             </li>
             <li class="card-set__item">
               <div class="card-set__image">
-                <svg width="70" height="70">
+                <svg class="card-set__icon" width="70" height="70">
                   <use xlink:href="./images/icons.svg#icon-astronaut-1 "></use>
                 </svg>
               </div>
@@ -142,7 +142,7 @@
       <!-- Sekcja Czym się zajmujemy -->
       <section class="section">
         <div class="container container--img">
-          <h2 class="section__h2">Czym się zajmujemy</h2>
+          <h2 class="container__h2">Czym się zajmujemy</h2>
           <ul class="images-agencja">
             <li class="images-agencja__item">
               <img
@@ -180,11 +180,12 @@
       <!-- Sekcja Nasz Zespół team -->
       <section class="section section--team">
         <div class="container container--img">
-          <h2 class="section__h2">Nasz zespół</h2>
+          <h2 class="container__h2">Nasz zespół</h2>
 
           <ul class="team">
             <li class="team__item">
               <img
+                class="team__img"
                 src="images/img(3).jpg"
                 alt="Product Designer"
                 width="270"
@@ -195,22 +196,22 @@
               <p class="team__position">Product Designer</p>
               <div class="social-media">
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20px" height="20px">
+                  <svg class="social-media__icon" width="20px" height="20px">
                     <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -218,6 +219,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="images/img(4).jpg"
                 alt="Frontend Developer"
                 width="270"
@@ -228,22 +230,22 @@
               <p class="team__position">Frontend Developer</p>
               <div class="social-media">
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20px" height="20px">
+                  <svg class="social-media__icon" width="20px" height="20px">
                     <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -251,6 +253,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="images/img(5).jpg"
                 alt="Marketing"
                 width="270"
@@ -261,22 +264,22 @@
               <p class="team__position">Marketing</p>
               <div class="social-media">
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20px" height="20px">
+                  <svg class="social-media__icon" width="20px" height="20px">
                     <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -284,6 +287,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="images/img(6).jpg"
                 alt="UI Designer"
                 width="270"
@@ -294,22 +298,22 @@
               <p class="team__position">UI Designer</p>
               <div class="social-media">
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20" height="20">
+                  <svg class="social-media__icon" width="20" height="20">
                     <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
                 <a class="social-media__item" href="">
-                  <svg width="20px" height="20px">
+                  <svg class="social-media__icon" width="20px" height="20px">
                     <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -321,46 +325,46 @@
       <!-- Sekcja Nasi Klienci clients -->
       <section class="section">
         <div class="container container--img">
-          <h2 class="section__h2">Nasi klienci</h2>
+          <h2 class="container__h2">Nasi klienci</h2>
           <ul class="clients">
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="">
-                <svg width="170px" height="92px">
+              <a class="client__link" href="">
+                <svg class="clients__icon" width="170px" height="92px">
                   <use xlink:href="./images/icons.svg#icon-client-6"></use>
                 </svg>
               </a>
@@ -402,49 +406,46 @@
           <p class="social-footer__text">Dołącz do nas</p>
           <div class="social-media1">
             <a class="social-media1__item" href="">
-              <svg width="20" height="20">
+              <svg class="social-media1__icon" width="20" height="20">
                 <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </a>
             <a class="social-media1__item" href="">
-              <svg width="20" height="20">
+              <svg class="social-media1__icon" width="20" height="20">
                 <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
             <a class="social-media1__item" href="">
-              <svg width="20" height="20">
+              <svg class="social-media1__icon" width="20" height="20">
                 <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
             <a class="social-media1__item" href="">
-              <svg width="20px" height="20px">
+              <svg class="social-media1__icon" width="20px" height="20px">
                 <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </a>
           </div>
         </div>
         <div class="newsletter-footer">
-          <p class="social-footer__text">Zapisz się do newslettera</p>
-          <div>
-            <form>
-              <div class="newsletter-box">
-                <label>
-                  <input
-                    class="newsletter-box__email"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                  />
-                </label>
-                <button class="button-footer" type="submit">
-                  <span class="button-footer__text">Zapisz się</span>
-                  <svg class="button-footer__svg" width="24" height="24">
-                    <use xlink:href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+          <p class="newsletter-footer__text">Zapisz się do newslettera</p>
+
+          <form class="newsletter-box">
+            <label class="newsletter-box__label">
+              <input
+                class="newsletter-box__email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="newsletter-box__button" type="submit">
+              <span class="newsletter-box__text">Zapisz się</span>
+              <svg class="newsletter-box__icon" width="24" height="24">
+                <use xlink:href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
