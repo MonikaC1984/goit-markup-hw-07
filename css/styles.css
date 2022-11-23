@@ -455,11 +455,13 @@ body {
 .footer-data__address {
   color: var(--color-header);
 }
-
+.footer-data__item {
+  margin-top: 9px;
+}
 .footer-data__link {
   list-style: none;
   text-decoration: none;
-  margin-bottom: 9px;
+
   color: #ffffff99;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
