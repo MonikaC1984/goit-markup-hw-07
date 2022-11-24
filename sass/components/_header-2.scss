@@ -1,0 +1,13 @@
+.header-2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-h2);
+}
+.header-2--hide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}

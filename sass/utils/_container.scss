@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container--h1 {
+  display: block;
+  padding: 200px 0;
+}
+
+.container--describe {
+  display: block;
+}
+
+.container--img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--footer {
+  display: flex;
+}
+
+.container-contact {
+  display: block;
+}

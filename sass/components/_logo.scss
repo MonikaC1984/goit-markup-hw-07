@@ -1,0 +1,49 @@
+/* logo */
+
+// Reguła dla całego logo
+
+.logo {
+  display: flex;
+  margin-right: 93px;
+  padding: 0;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--logo1-color);
+    border-color: var(--logo1-color);
+    text-decoration: underline;
+    text-decoration-color: var(--logo1-color);
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+// modyfikatory
+.logo__link--blue {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo1-color);
+}
+.logo__link--black {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo2-color);
+}
+
+.logo__link--white {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-header);
+}

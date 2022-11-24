@@ -1,0 +1,12 @@
+.newsletter-footer {
+  margin: 0 auto 94px 0px;
+  padding-top: 12px;
+
+  &__text {
+    color: var(--color-header);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
